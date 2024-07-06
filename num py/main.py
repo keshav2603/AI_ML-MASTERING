@@ -39,11 +39,14 @@ import numpy as np
 # b1=a[0:4]
 # b1[0]=99
 # print(b1)
-# print(a)
-rng = np.random.default_rng().integers(10, size=(2,4)) 
-# # print(rng.random((2,4)))
-# # print(rng) 
-# print(rng.integers(10, size=(2,4))) 
-# a,b=np.unique(rng,return_counts=True)
-a,b=np.unique(rng,axis=0)
-print(a,b)
+# # print(a)
+# rng = np.random.default_rng().integers(10, size=(2,4)) 
+# # # print(rng.random((2,4)))
+# # # print(rng) 
+# # print(rng.integers(10, size=(2,4))) 
+# # a,b=np.unique(rng,return_counts=True)
+# a,b=np.unique(rng,axis=0)
+# print(a,b)
+
+# a= np.arange(10).reshape((2,5))
+# print(a.flatten())
