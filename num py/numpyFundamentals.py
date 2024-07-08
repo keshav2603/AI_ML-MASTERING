@@ -97,3 +97,53 @@ b = np.array([[10], [20], [30], [40]])
 print(a * b)
 print(np.tan(a))
 '''
+
+# np mat myltipier and determinent
+'''
+a= np.ones((2,3))
+b=np.full((3,2),2)
+print(np.matmul(a,b))
+c=np.identity(4)
+print(np.linalg.det(c))
+'''
+
+# statistics
+'''
+a=np.array([[1,2,3],[4,5,6]])
+print(np.min(a))
+print(np.min(a,axis=0))
+print(np.min(a, axis=1))
+print(np.max(a))
+print(np.max(a,axis=0))
+print(np.max(a, axis=1))
+print(np.sum(a))
+print(np.sum(a,axis=0))
+print(np.sum(a,axis=1))
+'''
+
+# organising array
+'''
+before =np.array([[1,2,3,4],[5,6,7,8]])
+after = before.reshape((8,1))
+print(after)
+'''
+
+# vertical stacking
+'''
+v1=np.array([1,2,3,4])
+v2=np.array([5,6,7,8])
+v3=np.vstack([v1,v2,v1,v2])
+print(v3)
+'''
+
+# horizantal stack
+'''
+v1=np.array([1,2,3,4])
+v2=np.array([5,6,7,8])
+v3=np.hstack((v1,v2,v1,v2))
+print(v3)
+'''
+
+# miscellaneous
+a=np.genfromtxt("data.txt", delimiter=",")
+print(a)
