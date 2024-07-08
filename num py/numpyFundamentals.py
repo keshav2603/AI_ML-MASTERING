@@ -145,5 +145,25 @@ print(v3)
 '''
 
 # miscellaneous
-a=np.genfromtxt("data.txt", delimiter=",")
+'''
+filedata=np.genfromtxt('sample.txt', delimiter=",")
 print(a)
+a.astype("int32")
+'''
+
+# boolen masking and adwance indexing
+'''
+print(filedata>50)
+print(filedata[filedata<50])
+print(np.any(filedata>50, axiz=0))
+print(np.all(filedata>50, axiz=0))
+'''
+
+# index with a list in numpy
+'''
+a=np.array([1,2,3,4,5,6,7,8,9])
+
+print(a[[1,2,3]])
+'''
+
+# numpy colpmeted 
