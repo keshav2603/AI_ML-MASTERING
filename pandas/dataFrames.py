@@ -35,4 +35,31 @@ df = pd.read_excel("./pandas/random1.xlsx")
 # print(df.describe()) 
 
 # get all null value in data
-print(df.isnull())
+# print(df.isnull())
+# print(df.isnull().sum())
+
+# select specific columns
+
+# age = df["Age"]
+# # print(age)
+# print(type(df["Age"])) #output --> <class 'pandas.core.series.Series'>
+
+# abc = df[["Age","Gender"]]
+# print(abc)
+# print(type(df[["Age","Gender"]]))#output --> <class 'pandas.core.frame.DataFrame'>
+
+# above_40 = df[df["Age"]>40]
+# above_40_name =df.loc[df["Age"]>40,"Name"]
+# print(above_40)
+# print(above_40_name)
+# print(above_40.shape)
+
+# a= df[df["Age"].notna()]
+# print(a)
+
+# a=df.iloc[9:25, 2:5]
+# b=df.iloc[9,:]
+# print(a)
+# df.iloc[1,0]="keshav"        changing data
+# print(df.loc[1,:])
+# print(b)
