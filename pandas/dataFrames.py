@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 # data ={
 #     "name": [ "keshav", "paras", "lovnish"],
 #     "age": [ 19, 18, 17 ],
@@ -21,7 +22,7 @@ import pandas as pd
 
 
 # exploring data in pandas
-df = pd.read_excel("./pandas/random1.xlsx")
+# df = pd.read_excel("./pandas/random1.xlsx")
 # print(df)
 
 # print(df.head(10))
@@ -63,3 +64,22 @@ df = pd.read_excel("./pandas/random1.xlsx")
 # df.iloc[1,0]="keshav"        changing data
 # print(df.loc[1,:])
 # print(b)
+
+
+# dealing with duplicate data 
+
+# df = pd.read_excel("./pandas/random1.xlsx")
+# print(df.duplicated())
+# print(df["Age"].duplicated())
+# print(df["Age"].duplicated().sum())
+# print(df.drop_duplicates("Job Title"))
+
+# wworking with missing data
+
+df = pd.read_excel("./pandas/random1.xlsx")
+print(df.isnull().sum())
+print(df.replace(np.nan,"hi"))
+
+meanSalary= df["Salary"].mean()
+df["Salary"]=df["Salary"].replace(np.nan,meanSalary)
+
