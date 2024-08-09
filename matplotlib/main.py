@@ -93,5 +93,76 @@ import random
 # plt.pie([1],colors="white",radius=0.5)
 # plt.show()
 
-cr=plt.Circle(xy=(0,0),radius=1,facecolor="w")
-plt.gca().add_artist(cr)
+# cr=plt.Circle(xy=(0,0),radius=1,facecolor="w")
+# plt.gca().add_artist(cr)
+
+# stem plot
+
+x = [1, 2, 3, 4, 5]
+y = [2, 5, -4, 7, -2]
+
+# plt.stem(x, y, linefmt=":")
+# plt.stem(x, y, linefmt="-")
+# plt.stem(x, y, linefmt="-.")
+# plt.stem(x, y, linefmt="-.", markerfmt="r*")
+# plt.stem(x, y, linefmt="-.", markerfmt="r*", orientation="horizontal")
+
+# plt.show()
+
+# box plot
+
+# x=[10,20,30,40, 50,60]
+# x2=[10,20,30,40, 50,60,120]
+
+# plt.boxplot(x)
+# plt.boxplot(x, notch=True)
+# plt.boxplot(x, vert=False)
+# plt.boxplot(x, labels=["python"],patch_artist=True,showmeans=True)
+# plt.boxplot(x2, labels=["python"],patch_artist=True,showmeans=True, whis=10)
+# plt.boxplot(x, labels=["python"],patch_artist=True,showmeans=True,sym="g+",
+#             boxprops={"color":"r" },
+#             capprops={"color":"r"},
+#             whiskerprops={"color":"r"}
+#             )
+# plt.show()
+
+# x=[10,30,50,70]
+# x2=[20, 40,60,80]
+# y=[x, x2]
+# plt.boxplot(y)
+# plt.show()
+
+
+# stack plot
+
+# x=[10,20,30,40,50]
+# y=[12,40,50,30,25]
+# y1=[100,20,10,40,55]
+# y2=[50,43,50,60,25]
+# l=["area1","area2","area3"]
+# # plt.stackplot(x,y,y1,y2,labels=l, colors=["r","b","y"], baseline="sym")
+# # plt.stackplot(x,y,y1,y2,labels=l, colors=["r","b","y"], baseline="wiggle")
+# plt.stackplot(x,y,y1,y2,labels=l, colors=["r","b","y"], baseline="weighted_wiggle")
+# plt.legend(loc=2)
+# plt.show()
+
+
+# step plot
+
+# x=[10,20,30,40,50]
+# y=[12,40,50,30,25]
+
+# plt.step(x,y, marker="o", ms=10, mfc="g")
+# plt.grid()
+# plt.show()
+# can give more paremitter as in liner plot
+
+
+# fill_between plot
+
+x=[1,2,3,4,5]
+y=[1,2,3,4,5]
+plt.plot(x, y)
+plt.fill_between(x,y)
+plt.fill_between(x=[2,4],y1=[2,4])
+plt.show()
