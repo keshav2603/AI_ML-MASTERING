@@ -98,8 +98,8 @@ import random
 
 # stem plot
 
-x = [1, 2, 3, 4, 5]
-y = [2, 5, -4, 7, -2]
+# x = [1, 2, 3, 4, 5]
+# y = [2, 5, -4, 7, -2]
 
 # plt.stem(x, y, linefmt=":")
 # plt.stem(x, y, linefmt="-")
@@ -160,9 +160,50 @@ y = [2, 5, -4, 7, -2]
 
 # fill_between plot
 
+# x=np.array([1,2,3,4,5])
+# y=np.array([1,2,3,4,5])
+# plt.plot(x, y)
+# # plt.fill_between(x,y, color="g")
+# plt.fill_between(x,y, color="g", where=(x>=2)&(x<=4))
+# # plt.fill_between(x=[2,4],y2=2,y1=4)
+# plt.show()
+
+# subplot
+
+# x=[1,2,3,4,5]
+# y=[1,2,3,4,5]
+
+# plt.subplot(2,2,1)
+# plt.plot(x,y)
+
+# plt.subplot(2,2,2)
+# plt.pie(x)
+
+# plt.subplot(2,2,3)
+# plt.bar(x,y)
+
+# plt.subplot(2,2,4)
+# plt.boxplot(x)
+
+# # plt.savefig("plot")
+# # plt.savefig("./matplotlib/plot2", dpi=2000, facecolor="g")
+# # plt.savefig("plot1", dpi=2000)
+# # plt.savefig("./matplotlib/plot3.pdf")
+# plt.savefig("./matplotlib/plot4", transparent=True)
+
+
+# plt.show()
+
+
+
 x=[1,2,3,4,5]
-y=[1,2,3,4,5]
-plt.plot(x, y)
-plt.fill_between(x,y)
-plt.fill_between(x=[2,4],y1=[2,4])
+y=[3,1,5,3,2]
+
+plt.plot(x,y)
+# plt.xticks(x)
+# plt.yticks(x)
+plt.xlim(0,10)
+plt.ylim(0,10)
+
 plt.show()
+
