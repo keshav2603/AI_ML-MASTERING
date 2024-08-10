@@ -196,14 +196,29 @@ import random
 
 
 
-x=[1,2,3,4,5]
-y=[3,1,5,3,2]
+# x=[1,2,3,4,5]
+# y=[3,1,5,3,2]
 
-plt.plot(x,y)
-# plt.xticks(x)
-# plt.yticks(x)
-plt.xlim(0,10)
-plt.ylim(0,10)
+# plt.plot(x,y)
+# # plt.xticks(x)
+# # plt.yticks(x)
+# plt.xlim(0,10)
+# plt.ylim(0,10)
 
-plt.show()
+# plt.show()
+
+# adwance texting
+
+# x=[1,2,3,4,5]
+# y=[1,3,5,2,4]
+# plt.plot(x,y)
+
+# plt.title("python",fontsize=20)
+# plt.xlabel("days", fontsize=15)
+# plt.ylabel("user in 10 million", fontsize=15)
+# plt.text(3,5,"most user", style="italic", bbox={"facecolor":"red"})
+# plt.annotate("most user",xy=(3,5),xytext=(4,4), arrowprops={"facecolor":"black","shrink":100})
+
+# plt.legend(["up"],loc=2)
+# plt.show()
 
